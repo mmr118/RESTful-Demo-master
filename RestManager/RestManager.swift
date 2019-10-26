@@ -23,24 +23,21 @@ class RestManager {
     
     // MARK: - Public Methods
     
-    func makeRequest(toURL url: URL, withHttpMethod httpMethod: HttpMethod, completion: @escaping (_ result: Results) -> Void) {
+    func makeRequest(to url: URL, using httpMethod: HTTPMethod, completion: @escaping (_ result: Results) -> Void) {
         
         DispatchQueue.global(qos: .userInitiated).async { [weak self] in
-            let targetURL = self?.addURLQueryParameters(toURL: url)
+            let targetURL = self?.addURLQueryParameters(to: url)
             let httpBody = self?.getHttpBody()
             
-            guard let request = self?.prepareRequest(withURL: targetURL, httpBody: httpBody, httpMethod: httpMethod) else
-            {
-                completion(Results(withError: CustomError.failedToCreateRequest))
+            guard let request = self?.prepareRequest(withURL: targetURL, httpBody: httpBody, httpMethod: httpMethod) else {
+                completion(Results(error: CustomError.failedToCreateRequest))
                 return
             }
             
             let sessionConfiguration = URLSessionConfiguration.default
             let session = URLSession(configuration: sessionConfiguration)
             let task = session.dataTask(with: request) { (data, response, error) in
-                completion(Results(withData: data,
-                                   response: Response(fromURLResponse: response),
-                                   error: error))
+                completion(Results(data: data, response: Response(response), error: error))
             }
             task.resume()
         }
@@ -48,7 +45,7 @@ class RestManager {
     
     
     
-    func getData(fromURL url: URL, completion: @escaping (_ data: Data?) -> Void) {
+    func getData(from url: URL, completion: @escaping (_ data: Data?) -> Void) {
         DispatchQueue.global(qos: .userInitiated).async {
             let sessionConfiguration = URLSessionConfiguration.default
             let session = URLSession(configuration: sessionConfiguration)
@@ -64,8 +61,10 @@ class RestManager {
     
     // MARK: - Private Methods
     
-    private func addURLQueryParameters(toURL url: URL) -> URL {
-        if urlQueryParameters.totalItems() > 0 {
+    private func addURLQueryParameters(to url: URL) -> URL {
+
+        if urlQueryParameters.count > 0 {
+
             guard var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false) else { return url }
             var queryItems = [URLQueryItem]()
             for (key, value) in urlQueryParameters.allValues() {
@@ -86,7 +85,7 @@ class RestManager {
     
     
     private func getHttpBody() -> Data? {
-        guard let contentType = requestHttpHeaders.value(forKey: "Content-Type") else { return nil }
+        guard let contentType = requestHttpHeaders.value(for: "Content-Type") else { return nil }
         
         if contentType.contains("application/json") {
             return try? JSONSerialization.data(withJSONObject: httpBodyParameters.allValues(), options: [.prettyPrinted, .sortedKeys])
@@ -100,7 +99,7 @@ class RestManager {
     
     
     
-    private func prepareRequest(withURL url: URL?, httpBody: Data?, httpMethod: HttpMethod) -> URLRequest? {
+    private func prepareRequest(withURL url: URL?, httpBody: Data?, httpMethod: HTTPMethod) -> URLRequest? {
         guard let url = url else { return nil }
         var request = URLRequest(url: url)
         request.httpMethod = httpMethod.rawValue
@@ -111,94 +110,5 @@ class RestManager {
         
         request.httpBody = httpBody
         return request
-    }
-}
-
-
-// MARK: - RestManager Custom Types
-
-extension RestManager {
-    enum HttpMethod: String {
-        case get
-        case post
-        case put
-        case patch
-        case delete
-    }
-
-    
-    
-    struct RestEntity {
-        private var values: [String: String] = [:]
-        
-        mutating func add(value: String, forKey key: String) {
-            values[key] = value
-        }
-        
-        func value(forKey key: String) -> String? {
-            return values[key]
-        }
-        
-        func allValues() -> [String: String] {
-            return values
-        }
-        
-        func totalItems() -> Int {
-            return values.count
-        }
-    }
-    
-    
-    
-    struct Response {
-        var response: URLResponse?
-        var httpStatusCode: Int = 0
-        var headers = RestEntity()
-        
-        init(fromURLResponse response: URLResponse?) {
-            guard let response = response else { return }
-            self.response = response
-            httpStatusCode = (response as? HTTPURLResponse)?.statusCode ?? 0
-            
-            if let headerFields = (response as? HTTPURLResponse)?.allHeaderFields {
-                for (key, value) in headerFields {
-                    headers.add(value: "\(value)", forKey: "\(key)")
-                }
-            }
-        }
-    }
-    
-    
-    
-    struct Results {
-        var data: Data?
-        var response: Response?
-        var error: Error?
-        
-        init(withData data: Data?, response: Response?, error: Error?) {
-            self.data = data
-            self.response = response
-            self.error = error
-        }
-        
-        init(withError error: Error) {
-            self.error = error
-        }
-    }
-
-    
-    
-    enum CustomError: Error {
-        case failedToCreateRequest
-    }
-}
-
-
-// MARK: - Custom Error Description
-extension RestManager.CustomError: LocalizedError {
-    public var localizedDescription: String {
-        switch self {
-        case .failedToCreateRequest: return NSLocalizedString("Unable to create the URLRequest object", comment: "")
-        }
     }
 }

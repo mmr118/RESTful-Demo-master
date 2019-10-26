@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97B54D632364930F0085751C /* RestManager+ResetEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B54D622364930F0085751C /* RestManager+ResetEntity.swift */; };
+		97B54D652364936D0085751C /* RestManager+Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B54D642364936D0085751C /* RestManager+Results.swift */; };
+		97B54D67236493760085751C /* RestManager+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B54D66236493760085751C /* RestManager+Response.swift */; };
+		97B54D69236493850085751C /* RestManager+HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B54D68236493850085751C /* RestManager+HTTPMethod.swift */; };
+		97B54D6B236493920085751C /* RestManager+CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B54D6A236493920085751C /* RestManager+CustomError.swift */; };
 		C0292E0622645B350077CFA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0292E0522645B350077CFA3 /* AppDelegate.swift */; };
 		C0292E0822645B350077CFA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0292E0722645B350077CFA3 /* ViewController.swift */; };
 		C0292E0B22645B350077CFA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0292E0922645B350077CFA3 /* Main.storyboard */; };
@@ -17,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		97B54D622364930F0085751C /* RestManager+ResetEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestManager+ResetEntity.swift"; sourceTree = "<group>"; };
+		97B54D642364936D0085751C /* RestManager+Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestManager+Results.swift"; sourceTree = "<group>"; };
+		97B54D66236493760085751C /* RestManager+Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestManager+Response.swift"; sourceTree = "<group>"; };
+		97B54D68236493850085751C /* RestManager+HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestManager+HTTPMethod.swift"; sourceTree = "<group>"; };
+		97B54D6A236493920085751C /* RestManager+CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestManager+CustomError.swift"; sourceTree = "<group>"; };
 		C0292E0222645B350077CFA3 /* RestManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0292E0522645B350077CFA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0292E0722645B350077CFA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +49,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		97B54D6C236493E10085751C /* RestManager */ = {
+			isa = PBXGroup;
+			children = (
+				C0292E1722645B590077CFA3 /* RestManager.swift */,
+				97B54D622364930F0085751C /* RestManager+ResetEntity.swift */,
+				97B54D642364936D0085751C /* RestManager+Results.swift */,
+				97B54D66236493760085751C /* RestManager+Response.swift */,
+				97B54D68236493850085751C /* RestManager+HTTPMethod.swift */,
+				97B54D6A236493920085751C /* RestManager+CustomError.swift */,
+			);
+			name = RestManager;
+			sourceTree = "<group>";
+		};
 		C0292DF922645B350077CFA3 = {
 			isa = PBXGroup;
 			children = (
@@ -58,7 +81,7 @@
 		C0292E0422645B350077CFA3 /* RestManager */ = {
 			isa = PBXGroup;
 			children = (
-				C0292E1722645B590077CFA3 /* RestManager.swift */,
+				97B54D6C236493E10085751C /* RestManager */,
 				C0292E0522645B350077CFA3 /* AppDelegate.swift */,
 				C0292E0722645B350077CFA3 /* ViewController.swift */,
 				C0292E1A2264D85F0077CFA3 /* SampleStructures.swift */,
@@ -141,9 +164,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97B54D67236493760085751C /* RestManager+Response.swift in Sources */,
 				C0292E1822645B590077CFA3 /* RestManager.swift in Sources */,
 				C0292E0822645B350077CFA3 /* ViewController.swift in Sources */,
+				97B54D6B236493920085751C /* RestManager+CustomError.swift in Sources */,
+				97B54D632364930F0085751C /* RestManager+ResetEntity.swift in Sources */,
+				97B54D69236493850085751C /* RestManager+HTTPMethod.swift in Sources */,
 				C0292E0622645B350077CFA3 /* AppDelegate.swift in Sources */,
+				97B54D652364936D0085751C /* RestManager+Results.swift in Sources */,
 				C0292E1B2264D85F0077CFA3 /* SampleStructures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
