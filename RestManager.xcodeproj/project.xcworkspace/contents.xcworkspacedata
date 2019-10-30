@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:RestManager.xcodeproj">
+      location = "group:AppDelegate.swift">
+   </FileRef>
+   <FileRef
+      location = "group:SceneDelegate.swift">
+   </FileRef>
+   <FileRef
+      location = "group:ViewController.swift">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

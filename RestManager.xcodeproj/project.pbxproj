@@ -7,19 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		97B54D632364930F0085751C /* RestManager+ResetEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B54D622364930F0085751C /* RestManager+ResetEntity.swift */; };
-		97B54D652364936D0085751C /* RestManager+Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B54D642364936D0085751C /* RestManager+Results.swift */; };
-		97B54D67236493760085751C /* RestManager+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B54D66236493760085751C /* RestManager+Response.swift */; };
-		97B54D69236493850085751C /* RestManager+HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B54D68236493850085751C /* RestManager+HTTPMethod.swift */; };
-		97B54D6B236493920085751C /* RestManager+CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B54D6A236493920085751C /* RestManager+CustomError.swift */; };
-		C0292E0622645B350077CFA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0292E0522645B350077CFA3 /* AppDelegate.swift */; };
-		C0292E0822645B350077CFA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0292E0722645B350077CFA3 /* ViewController.swift */; };
-		C0292E0B22645B350077CFA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0292E0922645B350077CFA3 /* Main.storyboard */; };
-		C0292E0D22645B380077CFA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0292E0C22645B380077CFA3 /* Assets.xcassets */; };
-		C0292E1022645B380077CFA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0292E0E22645B380077CFA3 /* LaunchScreen.storyboard */; };
-		C0292E1822645B590077CFA3 /* RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0292E1722645B590077CFA3 /* RestManager.swift */; };
-		C0292E1B2264D85F0077CFA3 /* SampleStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0292E1A2264D85F0077CFA3 /* SampleStructures.swift */; };
+		DD8C1020236A29F700A9D549 /* RestAPIManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8C1017236A29F700A9D549 /* RestAPIManager.framework */; };
+		DD8C1027236A29F700A9D549 /* RestAPIManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C1026236A29F700A9D549 /* RestAPIManagerTests.swift */; };
+		DD8C1029236A29F700A9D549 /* RestAPIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DD8C1019236A29F700A9D549 /* RestAPIManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD8C1078236A2AB800A9D549 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD8C1076236A2AB800A9D549 /* Main.storyboard */; };
+		DD8C107A236A2AB800A9D549 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD8C1079236A2AB800A9D549 /* Assets.xcassets */; };
+		DD8C107D236A2AB800A9D549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD8C107B236A2AB800A9D549 /* LaunchScreen.storyboard */; };
+		DD8C1086236A2AD300A9D549 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C1083236A2AD300A9D549 /* SceneDelegate.swift */; };
+		DD8C1087236A2AD300A9D549 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C1084236A2AD300A9D549 /* ViewController.swift */; };
+		DD8C1088236A2AD300A9D549 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C1085236A2AD300A9D549 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD8C1021236A29F700A9D549 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0292DFA22645B350077CFA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD8C1016236A29F700A9D549;
+			remoteInfo = RestAPIManager;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		97B54D622364930F0085751C /* RestManager+ResetEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestManager+ResetEntity.swift"; sourceTree = "<group>"; };
@@ -27,7 +34,6 @@
 		97B54D66236493760085751C /* RestManager+Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestManager+Response.swift"; sourceTree = "<group>"; };
 		97B54D68236493850085751C /* RestManager+HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestManager+HTTPMethod.swift"; sourceTree = "<group>"; };
 		97B54D6A236493920085751C /* RestManager+CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestManager+CustomError.swift"; sourceTree = "<group>"; };
-		C0292E0222645B350077CFA3 /* RestManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0292E0522645B350077CFA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0292E0722645B350077CFA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C0292E0A22645B350077CFA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -36,10 +42,45 @@
 		C0292E1122645B380077CFA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0292E1722645B590077CFA3 /* RestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestManager.swift; sourceTree = "<group>"; };
 		C0292E1A2264D85F0077CFA3 /* SampleStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleStructures.swift; sourceTree = "<group>"; };
+		DD8C1017236A29F700A9D549 /* RestAPIManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RestAPIManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD8C1019236A29F700A9D549 /* RestAPIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RestAPIManager.h; sourceTree = "<group>"; };
+		DD8C101A236A29F700A9D549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD8C101F236A29F700A9D549 /* RestAPIManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestAPIManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD8C1026236A29F700A9D549 /* RestAPIManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPIManagerTests.swift; sourceTree = "<group>"; };
+		DD8C1028236A29F700A9D549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD8C1035236A2A4400A9D549 /* RestAPIManager+HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RestAPIManager+HTTPMethod.swift"; sourceTree = "<group>"; };
+		DD8C1036236A2A4400A9D549 /* RestAPIManager+Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RestAPIManager+Response.swift"; sourceTree = "<group>"; };
+		DD8C1037236A2A4400A9D549 /* RestAPIManager+Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RestAPIManager+Entity.swift"; sourceTree = "<group>"; };
+		DD8C1038236A2A4400A9D549 /* RestAPIManager+Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RestAPIManager+Results.swift"; sourceTree = "<group>"; };
+		DD8C1039236A2A4400A9D549 /* RestAPIManager+CustomError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RestAPIManager+CustomError.swift"; sourceTree = "<group>"; };
+		DD8C103A236A2A4400A9D549 /* RestAPIManagerr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestAPIManagerr.swift; sourceTree = "<group>"; };
+		DD8C106E236A2AB800A9D549 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD8C1077236A2AB800A9D549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD8C1079236A2AB800A9D549 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD8C107C236A2AB800A9D549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD8C107E236A2AB800A9D549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD8C1083236A2AD300A9D549 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DD8C1084236A2AD300A9D549 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD8C1085236A2AD300A9D549 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C0292DFF22645B350077CFA3 /* Frameworks */ = {
+		DD8C1014236A29F700A9D549 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD8C101C236A29F700A9D549 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD8C1020236A29F700A9D549 /* RestAPIManager.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD8C106B236A2AB800A9D549 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -65,7 +106,10 @@
 		C0292DF922645B350077CFA3 = {
 			isa = PBXGroup;
 			children = (
+				DD8C1018236A29F700A9D549 /* RestAPIManager */,
+				DD8C1025236A29F700A9D549 /* RestAPIManagerTests */,
 				C0292E0422645B350077CFA3 /* RestManager */,
+				DD8C106F236A2AB800A9D549 /* DemoApp */,
 				C0292E0322645B350077CFA3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +117,9 @@
 		C0292E0322645B350077CFA3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C0292E0222645B350077CFA3 /* RestManager.app */,
+				DD8C1017236A29F700A9D549 /* RestAPIManager.framework */,
+				DD8C101F236A29F700A9D549 /* RestAPIManagerTests.xctest */,
+				DD8C106E236A2AB800A9D549 /* DemoApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +130,12 @@
 				97B54D6C236493E10085751C /* RestManager */,
 				C0292E0522645B350077CFA3 /* AppDelegate.swift */,
 				C0292E0722645B350077CFA3 /* ViewController.swift */,
+				DD8C1039236A2A4400A9D549 /* RestAPIManager+CustomError.swift */,
+				DD8C1037236A2A4400A9D549 /* RestAPIManager+Entity.swift */,
+				DD8C1035236A2A4400A9D549 /* RestAPIManager+HTTPMethod.swift */,
+				DD8C1036236A2A4400A9D549 /* RestAPIManager+Response.swift */,
+				DD8C1038236A2A4400A9D549 /* RestAPIManager+Results.swift */,
+				DD8C103A236A2A4400A9D549 /* RestAPIManagerr.swift */,
 				C0292E1A2264D85F0077CFA3 /* SampleStructures.swift */,
 				C0292E0C22645B380077CFA3 /* Assets.xcassets */,
 				C0292E0922645B350077CFA3 /* Main.storyboard */,
@@ -93,24 +145,103 @@
 			path = RestManager;
 			sourceTree = "<group>";
 		};
+		DD8C1018236A29F700A9D549 /* RestAPIManager */ = {
+			isa = PBXGroup;
+			children = (
+				DD8C1019236A29F700A9D549 /* RestAPIManager.h */,
+				DD8C101A236A29F700A9D549 /* Info.plist */,
+			);
+			path = RestAPIManager;
+			sourceTree = "<group>";
+		};
+		DD8C1025236A29F700A9D549 /* RestAPIManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD8C1026236A29F700A9D549 /* RestAPIManagerTests.swift */,
+				DD8C1028236A29F700A9D549 /* Info.plist */,
+			);
+			path = RestAPIManagerTests;
+			sourceTree = "<group>";
+		};
+		DD8C106F236A2AB800A9D549 /* DemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				DD8C1076236A2AB800A9D549 /* Main.storyboard */,
+				DD8C1085236A2AD300A9D549 /* AppDelegate.swift */,
+				DD8C1083236A2AD300A9D549 /* SceneDelegate.swift */,
+				DD8C1084236A2AD300A9D549 /* ViewController.swift */,
+				DD8C1079236A2AB800A9D549 /* Assets.xcassets */,
+				DD8C107B236A2AB800A9D549 /* LaunchScreen.storyboard */,
+				DD8C107E236A2AB800A9D549 /* Info.plist */,
+			);
+			path = DemoApp;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		DD8C1012236A29F700A9D549 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD8C1029236A29F700A9D549 /* RestAPIManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		C0292E0122645B350077CFA3 /* RestManager */ = {
+		DD8C1016236A29F700A9D549 /* RestAPIManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C0292E1422645B380077CFA3 /* Build configuration list for PBXNativeTarget "RestManager" */;
+			buildConfigurationList = DD8C1033236A29F700A9D549 /* Build configuration list for PBXNativeTarget "RestAPIManager" */;
 			buildPhases = (
-				C0292DFE22645B350077CFA3 /* Sources */,
-				C0292DFF22645B350077CFA3 /* Frameworks */,
-				C0292E0022645B350077CFA3 /* Resources */,
+				DD8C1012236A29F700A9D549 /* Headers */,
+				DD8C1013236A29F700A9D549 /* Sources */,
+				DD8C1014236A29F700A9D549 /* Frameworks */,
+				DD8C1015236A29F700A9D549 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = RestManager;
-			productName = RestManager;
-			productReference = C0292E0222645B350077CFA3 /* RestManager.app */;
+			name = RestAPIManager;
+			productName = RestAPIManager;
+			productReference = DD8C1017236A29F700A9D549 /* RestAPIManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DD8C101E236A29F700A9D549 /* RestAPIManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD8C1034236A29F700A9D549 /* Build configuration list for PBXNativeTarget "RestAPIManagerTests" */;
+			buildPhases = (
+				DD8C101B236A29F700A9D549 /* Sources */,
+				DD8C101C236A29F700A9D549 /* Frameworks */,
+				DD8C101D236A29F700A9D549 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD8C1022236A29F700A9D549 /* PBXTargetDependency */,
+			);
+			name = RestAPIManagerTests;
+			productName = RestAPIManagerTests;
+			productReference = DD8C101F236A29F700A9D549 /* RestAPIManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD8C106D236A2AB800A9D549 /* DemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD8C107F236A2AB800A9D549 /* Build configuration list for PBXNativeTarget "DemoApp" */;
+			buildPhases = (
+				DD8C106A236A2AB800A9D549 /* Sources */,
+				DD8C106B236A2AB800A9D549 /* Frameworks */,
+				DD8C106C236A2AB800A9D549 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DemoApp;
+			productName = DemoApp;
+			productReference = DD8C106E236A2AB800A9D549 /* DemoApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -119,12 +250,20 @@
 		C0292DFA22645B350077CFA3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Appcoda;
 				TargetAttributes = {
-					C0292E0122645B350077CFA3 = {
-						CreatedOnToolsVersion = 10.1;
+					DD8C1016236A29F700A9D549 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					DD8C101E236A29F700A9D549 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = C0292E0122645B350077CFA3;
+					};
+					DD8C106D236A2AB800A9D549 = {
+						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -141,42 +280,75 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C0292E0122645B350077CFA3 /* RestManager */,
+				DD8C1016236A29F700A9D549 /* RestAPIManager */,
+				DD8C101E236A29F700A9D549 /* RestAPIManagerTests */,
+				DD8C106D236A2AB800A9D549 /* DemoApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C0292E0022645B350077CFA3 /* Resources */ = {
+		DD8C1015236A29F700A9D549 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0292E1022645B380077CFA3 /* LaunchScreen.storyboard in Resources */,
-				C0292E0D22645B380077CFA3 /* Assets.xcassets in Resources */,
-				C0292E0B22645B350077CFA3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD8C101D236A29F700A9D549 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD8C106C236A2AB800A9D549 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD8C107D236A2AB800A9D549 /* LaunchScreen.storyboard in Resources */,
+				DD8C107A236A2AB800A9D549 /* Assets.xcassets in Resources */,
+				DD8C1078236A2AB800A9D549 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C0292DFE22645B350077CFA3 /* Sources */ = {
+		DD8C1013236A29F700A9D549 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97B54D67236493760085751C /* RestManager+Response.swift in Sources */,
-				C0292E1822645B590077CFA3 /* RestManager.swift in Sources */,
-				C0292E0822645B350077CFA3 /* ViewController.swift in Sources */,
-				97B54D6B236493920085751C /* RestManager+CustomError.swift in Sources */,
-				97B54D632364930F0085751C /* RestManager+ResetEntity.swift in Sources */,
-				97B54D69236493850085751C /* RestManager+HTTPMethod.swift in Sources */,
-				C0292E0622645B350077CFA3 /* AppDelegate.swift in Sources */,
-				97B54D652364936D0085751C /* RestManager+Results.swift in Sources */,
-				C0292E1B2264D85F0077CFA3 /* SampleStructures.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD8C101B236A29F700A9D549 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD8C1027236A29F700A9D549 /* RestAPIManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD8C106A236A2AB800A9D549 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD8C1088236A2AD300A9D549 /* AppDelegate.swift in Sources */,
+				DD8C1087236A2AD300A9D549 /* ViewController.swift in Sources */,
+				DD8C1086236A2AD300A9D549 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD8C1022236A29F700A9D549 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD8C1016236A29F700A9D549 /* RestAPIManager */;
+			targetProxy = DD8C1021236A29F700A9D549 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C0292E0922645B350077CFA3 /* Main.storyboard */ = {
@@ -191,6 +363,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				C0292E0F22645B380077CFA3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DD8C1076236A2AB800A9D549 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD8C1077236A2AB800A9D549 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD8C107B236A2AB800A9D549 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD8C107C236A2AB800A9D549 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -314,38 +502,143 @@
 			};
 			name = Release;
 		};
-		C0292E1522645B380077CFA3 /* Debug */ = {
+		DD8C102F236A29F700A9D549 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9BTCAVN99V;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RestAPIManager/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.notmoniapps.RestAPIManager;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DD8C1030236A29F700A9D549 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9BTCAVN99V;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RestAPIManager/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.notmoniapps.RestAPIManager;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DD8C1031236A29F700A9D549 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4DHQU43U3E;
+				INFOPLIST_FILE = RestAPIManagerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.notmoniapps.RestAPIManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RestManager.app/RestManager";
+			};
+			name = Debug;
+		};
+		DD8C1032236A29F700A9D549 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4DHQU43U3E;
+				INFOPLIST_FILE = RestAPIManagerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.notmoniapps.RestAPIManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RestManager.app/RestManager";
+			};
+			name = Release;
+		};
+		DD8C1080236A2AB800A9D549 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9BTCAVN99V;
-				INFOPLIST_FILE = RestManager/Info.plist;
+				DEVELOPMENT_TEAM = 4DHQU43U3E;
+				INFOPLIST_FILE = DemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.appcoda.RestManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.notmoniapps.DemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoApp/DemoApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		C0292E1622645B380077CFA3 /* Release */ = {
+		DD8C1081236A2AB800A9D549 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9BTCAVN99V;
-				INFOPLIST_FILE = RestManager/Info.plist;
+				DEVELOPMENT_TEAM = 4DHQU43U3E;
+				INFOPLIST_FILE = DemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.appcoda.RestManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.notmoniapps.DemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoApp/DemoApp-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -362,11 +655,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C0292E1422645B380077CFA3 /* Build configuration list for PBXNativeTarget "RestManager" */ = {
+		DD8C1033236A29F700A9D549 /* Build configuration list for PBXNativeTarget "RestAPIManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C0292E1522645B380077CFA3 /* Debug */,
-				C0292E1622645B380077CFA3 /* Release */,
+				DD8C102F236A29F700A9D549 /* Debug */,
+				DD8C1030236A29F700A9D549 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD8C1034236A29F700A9D549 /* Build configuration list for PBXNativeTarget "RestAPIManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD8C1031236A29F700A9D549 /* Debug */,
+				DD8C1032236A29F700A9D549 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD8C107F236A2AB800A9D549 /* Build configuration list for PBXNativeTarget "DemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD8C1080236A2AB800A9D549 /* Debug */,
+				DD8C1081236A2AB800A9D549 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
